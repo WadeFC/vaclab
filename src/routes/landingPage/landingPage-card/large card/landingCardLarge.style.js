@@ -7,7 +7,7 @@ export const CardBox = styled.div`
   float: right;
   margin-left: 3rem;
   color: white;
-  box-shadow: -60px 60px 130px rgba(19, 99, 223, 0.3); 
+  box-shadow: -60px 60px 130px rgba(19, 99, 223, 0.5); 
   
 `
 export const InnerBox = styled.div`

@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+:root{
+  --primary-blue: #1363DF;
+  --primary-dark-blue: #06283D;
+  --primary-light-blue: #47B5FF;
+  --primary-very-light-blue: #DFF6FF;
+  --danger: #de350b;
+  --light-red: rgba(255, 116, 82, 1);
+  --gray: #999999;
+  --gray500: #667085;
+  --darker-gray: #344563;
+  --text-color: #091e42;
+  --alt-text-color: #253858;
+  --yellow: #e5b152;
+  --green :#7DCE13
 }
 
-code {
+@font-face {
+  font-family: "CircularStd";
+  src: url("./assets/font/CircularStd-Book.ttf");
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("./assets/font/CircularStd-Book.ttf");
+  font-weight: 450;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("./assets/font/circularStd-medium-500.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("./assets/font/CircularStd-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "CircularStd";
+  src: url("./assets/font/CircularStd-Black.ttf");
+  font-weight: 900;
+}
+
+*,
+html {
+  font-size: 1em;
+  font-family: "CircularStd", sans-serif;
+  margin: 0;
+}
+
+* {
+  scrollbar-color: transparent;
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 3px;
+  height: 50px;
+}
+p{
+  font-family: "CircularStd", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  border-bottom-right-radius: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--text-color);
+  font-weight: bold;
+  font-family: "CircularStd";
+  margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.18rem;
+  line-height: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+p {
+  font-style: normal;
+  font-weight: 450;
+}
+
+label {
+  margin: 0 !important;
+}
+
+body {
+  margin: 0;
+  background-color: #f9f9ff;
+}
+
+.side-margin{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.section{
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+}*/

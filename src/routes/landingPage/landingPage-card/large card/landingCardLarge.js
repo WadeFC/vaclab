@@ -1,7 +1,7 @@
-import "../large card/landingPageLarge.style"
-import {BlueBackground, ButtomBox, CardBox, Emoji, EmojiAndTopic, InnerBox} from "./landingPageLarge.style";
+import "./landingCardLarge.style"
+import {BlueBackground, ButtomBox, CardBox, Emoji, EmojiAndTopic, InnerBox} from "./landingCardLarge.style";
 
-const LandingPageLarge =({children, topic})=>{
+const LandingCardLarge =({children, topic})=>{
     return(
         <>
             <CardBox>
@@ -25,4 +25,4 @@ const LandingPageLarge =({children, topic})=>{
         </>
     )
 }
-export {LandingPageLarge}
+export {LandingCardLarge}

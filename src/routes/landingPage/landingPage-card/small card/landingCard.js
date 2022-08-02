@@ -1,12 +1,18 @@
 import "./landingCard.styles"
-import {CardBox} from "./landingCard.styles";
+import {CardBox, Flex} from "./landingCard.styles";
+import {BlueBackground,Emoji} from "./landingCard.styles";
 
-const LandingCardSmall = ({children,imgSource})=>{
+const LandingCardSmall = ({children, emoji})=>{
     return(
         <>
             <CardBox>
-                {/*<img src={imgSource}/>*/}
-                <p>{children}</p>
+                <Flex>
+                    <BlueBackground>
+                        <Emoji>{emoji}</Emoji>
+                    </BlueBackground>
+                    <p>{children}</p>
+                </Flex>
+
             </CardBox>
         </>
     )
