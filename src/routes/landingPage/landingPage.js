@@ -31,35 +31,41 @@ import {LargerCard, LargerCardAlternate} from "./landingPage-card/Larger card/la
 const LandingPage =()=>{
     return(
         <>
-            <Header>
-                <Heading className={"side-margin"}>
-                    <GetProtection>
-                        <ProtectionText>Get protection today</ProtectionText>
-                    </GetProtection>
-                    <VacilabContainer>
-                        <Vaclab>Vacilabbs</Vaclab>
-                    </VacilabContainer>
-                    <ButtonAndDescription>
-                        <div>
-                            <Button>Get a slot now</Button>
-                        </div>
-                        <div>
-                            <DescriptionHeader>
-                                <HealthyLife>Your <span style={{color:"var(--green)"}}>healthy</span> life starts here</HealthyLife>
-                            </DescriptionHeader>
+            <div className={"container"}>
+                <Section className={"section"}>
+                    <Header>
+                        <Heading className={"side-margin"}>
+                            <GetProtection>
+                                <ProtectionText>Get protection today</ProtectionText>
+                            </GetProtection>
+                            <VacilabContainer>
+                                <Vaclab>Vacilabbs</Vaclab>
+                            </VacilabContainer>
+                            <ButtonAndDescription>
+                                <div>
+                                    <Button>Get a slot now</Button>
+                                </div>
+                                <div>
+                                    <DescriptionHeader>
+                                        <HealthyLife>Your <span style={{color:"var(--green)"}}>healthy</span> life starts here</HealthyLife>
+                                    </DescriptionHeader>
 
-                            <HealthyLife>Get you and and your family<br/>
-                                protected from the Covid 19 <br/> pandemic
-                                enjoy protection
-                            </HealthyLife>
-                        </div>
-                    </ButtonAndDescription>
-                    <ImageDiv>
-                        <NurseImage src={Nurse}/>
-                    </ImageDiv>
-                </Heading>
-                <FadeOutBottom src={FadeOut}/>
-            </Header>
+                                    <HealthyLife>Get you and and your family<br/>
+                                        protected from the Covid 19 <br/> pandemic
+                                        enjoy protection
+                                    </HealthyLife>
+                                </div>
+                            </ButtonAndDescription>
+                            <ImageDiv>
+                                <NurseImage src={Nurse}/>
+                            </ImageDiv>
+                        </Heading>
+                        <FadeOutBottom src={FadeOut}/>
+                    </Header>
+                </Section>
+
+            </div>
+
             <div className={"container"}>
                 <Section className={"section"}>
                     <div className={"side-margin"}>

@@ -1,12 +1,11 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 export const Buttons = styled.button`
-  min-width: 10.3vw;
-  width: auto;
-  height: 3.1vw;
-  letter-spacing: 0.03vw;
-  line-height: 3.1vw;
-  padding: 0 1.5vw 0 1.5vw;
+  width: fit-content;
+  height: 3rem;
+  padding: 0 1rem;
+  letter-spacing: 0.03rem;
+  line-height: 3.1rem;
   background-color: var(--yellow);
   color: white;
   border: none;
@@ -14,11 +13,24 @@ export const Buttons = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
-  font-size: 1.5vw;
+  font-size: 1rem;
+  transition: background-color 0.5s;
+  
+  ${
+    props => props.type==="glass" && css`
+      background: rgba(255,255,255, 0.2);
+      backdrop-filter: blur( 1px );
+      -webkit-backdrop-filter: blur( 9px );
+      border-radius: 10px;
+      border: 1px solid rgba(19,99,223,0.2);
+      color: var(--text-color);
+    `
+  }
 
   &:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
+    
   }
 `

@@ -1,40 +1,62 @@
-import { Link } from "react-router-dom"
-import styled from 'styled-components';
+import styled, {css} from "styled-components"
 
-
-export const NavigationContainer = styled.div`
-    height:4rem;
-    width: 100%;
-    background-color: #f3f3ff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    z-index: 10 ;
+export const Nav = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f9f9ff;
+  
+  @media (max-width: 768px){
+    z-index: 1000;
+  }
 `
-export const NavigationLogo = styled.div`
+export const Hamburger = styled.div`
+  display: none;
+    flex-direction: column;
+   cursor: pointer;
+   span{
+     height: 2px;
+     width: 25px;
+     background-color: var(--text-color);
+     margin-bottom: 4px;
+     border-radius: 5px;
+   }
+  
+  @media (max-width: 768px){
     display: flex;
-    align-items: center ;
-    
+  }
+  
+  
 `
-export const Logo = styled.img`
-    height:2vw ;
-    width: 2vw;
-    margin-right: 2.6vw;
+export const Menu = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  
+  @media (max-width: 768px){
+    overflow: hidden;
+    flex-direction: column;
+    width:100%;
+    max-height: ${({mobile}) => (mobile ? "300px" : "0")};
+    transition: max-height 0.3s ease-in;
+  }
 `
-export const NavigationLinks = styled.div`
-    display: flex ;
-    align-items: center ;
-    justify-content: space-between;
+export const MenuLinks = styled.a`
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease-in;
+  
+  &:hover{
+    color: var(--primary-light-blue);
+  }
 `
-export const Links = styled.a`
-    margin-left: 3em;
+export const Logo = styled.a`
+  padding: 1rem 0;
+  color: var(--text-color);
+  text-decoration: none;
 `
-export const InnerContainer = styled.div`
-      display: flex;
-      align-items: center ;
-      justify-content: space-between;
-      height:4rem;
-`
-
-//!st section styling
-
-export const WhyGet = styled

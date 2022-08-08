@@ -49,6 +49,10 @@ export const ImageDiv = styled.div`
   left: 0;
   right: 0;
   text-align: center;
+  
+  @media (max-width: 768px){
+    z-index: -1;
+  }
 `
 export const FadeOutBottom = styled.img`
   width: 100%;
