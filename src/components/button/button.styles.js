@@ -16,6 +16,15 @@ export const Buttons = styled.button`
   font-size: 1rem;
   transition: background-color 0.5s;
   
+  @media screen and (max-width: 600px){
+    width: fit-content;
+    height: 2.6rem;
+    padding: 0 0.5rem;
+    letter-spacing: 0.02rem;
+    line-height: 2.8rem;
+    font-size: 1rem;
+  }
+  
   ${
     props => props.type==="glass" && css`
       background: rgba(255,255,255, 0.2);
@@ -24,6 +33,14 @@ export const Buttons = styled.button`
       border-radius: 10px;
       border: 1px solid rgba(19,99,223,0.2);
       color: var(--text-color);
+    `
+  }
+
+  ${
+      props => props.type==="dark" && css`
+      background-color: var(--text-color);
+      color: white;
+        border-radius: 0;
     `
   }
 

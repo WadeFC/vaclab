@@ -24,24 +24,5 @@ const LargerCard =({topic, text, number})=>{
         </>
     )
 }
-const LargerCardAlternate =({topic, text, number})=>{
-    return(
-        <>
-            <OuterBox alternate>
-                <Topic alternate>{topic}</Topic>
-                <Text alternate>{text}</Text>
-                <ButtonDiv>
-                    <span alternate>Read more</span>
-                    <span alternate>&#8594;</span>
-                </ButtonDiv>
-                <Number>
-                    <NumberText alternate>
-                        {number}
-                    </NumberText>
 
-                </Number>
-            </OuterBox>
-        </>
-    )
-}
-export {LargerCard,LargerCardAlternate}
+export {LargerCard}

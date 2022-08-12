@@ -9,6 +9,11 @@ export const CardBox = styled.div`
   color: white;
   box-shadow: -60px 60px 130px rgba(19, 99, 223, 0.5); 
   
+  @media screen and (max-width: 768px){
+    margin-top: 40px;
+    margin-right: 3rem;
+  }
+  
 `
 export const InnerBox = styled.div`
   margin: 10%;

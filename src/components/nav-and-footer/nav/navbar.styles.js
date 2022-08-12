@@ -1,16 +1,20 @@
 import styled, {css} from "styled-components"
 
+export const Navigation = styled.nav`
+  background-color: #f9f9ff;
+`
 export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #f9f9ff;
+
   
   @media (max-width: 768px){
     z-index: 1000;
   }
 `
+
 export const Hamburger = styled.div`
   display: none;
     flex-direction: column;
@@ -26,7 +30,6 @@ export const Hamburger = styled.div`
   @media (max-width: 768px){
     display: flex;
   }
-  
   
 `
 export const Menu = styled.div`
@@ -59,4 +62,16 @@ export const Logo = styled.a`
   padding: 1rem 0;
   color: var(--text-color);
   text-decoration: none;
+  
+  h2{
+    float: left;
+  }
+`
+
+export const LogoContainer = styled.div`
+  float: left;
+  width: 30px;
+  height: 30px;
+  vertical-align: baseline;
+  margin-right: 0.3rem;
 `

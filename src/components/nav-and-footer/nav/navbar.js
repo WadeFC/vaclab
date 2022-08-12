@@ -1,32 +1,40 @@
-import {Hamburger, Logo, Menu, MenuLinks, Nav} from "./navbar.styles";
+import {Hamburger, Logo, LogoContainer, Menu, MenuLinks, Nav, Navigation} from "./navbar.styles";
 import {Button} from "../../button/button";
 import {useState} from "react";
+import {VaclabLogo} from "../../../assets/svgs";
 
 
 const Navbar =()=>{
     const[mobile, setMobile] = useState(false)
     return(
         <>
-            <Nav className={"side-margin"}>
-                <Logo href={""}>
-                    <h2>Vacilabbs</h2>
-                </Logo>
+            <Navigation>
+                <Nav className={"side-margin"}>
+                    <Logo href={""}>
+                        <LogoContainer>
+                            <VaclabLogo/>
+                        </LogoContainer>
 
-                <Hamburger onClick={()=> setMobile(!mobile)}>
-                    <span/>
-                    <span/>
-                    <span/>
-                </Hamburger>
+                        <h2>Vaclab</h2>
+                    </Logo>
 
-                <Menu mobile={mobile}>
-                    <MenuLinks>Home</MenuLinks>
-                    <MenuLinks>Service</MenuLinks>
-                    <MenuLinks>Shop</MenuLinks>
-                    <MenuLinks>About</MenuLinks>
-                    <Button type={"glass"}>Login</Button>
-                </Menu>
+                    <Hamburger onClick={()=> setMobile(!mobile)}>
+                        <span/>
+                        <span/>
+                        <span/>
+                    </Hamburger>
 
-            </Nav>
+                    <Menu mobile={mobile}>
+                        <MenuLinks>Home</MenuLinks>
+                        <MenuLinks>Service</MenuLinks>
+                        <MenuLinks>Shop</MenuLinks>
+                        <MenuLinks>About</MenuLinks>
+                        <Button type={"glass"}>Login</Button>
+                    </Menu>
+
+                </Nav>
+            </Navigation>
+
         </>
     )
 }
