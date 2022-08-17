@@ -1,14 +1,17 @@
 import styled, {css} from "styled-components"
+import {Link} from "react-router-dom";
 
 export const Navigation = styled.nav`
-  background-color: #f9f9ff;
+  background-color: white;
+  position: sticky;
+  width: 100% !important;
+  z-index: 10;
 `
 export const Nav = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
   
   @media (max-width: 768px){
     z-index: 1000;
@@ -74,4 +77,8 @@ export const LogoContainer = styled.div`
   height: 30px;
   vertical-align: baseline;
   margin-right: 0.3rem;
+`
+export const Login = styled(Link)`
+    text-decoration: none;
+  color: var(--text-color);
 `

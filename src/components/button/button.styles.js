@@ -9,7 +9,7 @@ export const Buttons = styled.button`
   background-color: var(--yellow);
   color: white;
   border: none;
-  border-radius: 0.625vw;
+  border-radius: 10px;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -26,21 +26,33 @@ export const Buttons = styled.button`
   }
   
   ${
-    props => props.type==="glass" && css`
+    props => props.buttonType==="glass" && css`
       background: rgba(255,255,255, 0.2);
       backdrop-filter: blur( 1px );
       -webkit-backdrop-filter: blur( 9px );
       border-radius: 10px;
       border: 1px solid rgba(19,99,223,0.2);
       color: var(--text-color);
+      cursor: pointer;
     `
   }
 
   ${
-      props => props.type==="dark" && css`
+      props => props.buttonType==="dark" && css`
       background-color: var(--text-color);
       color: white;
         border-radius: 0;
+        cursor: pointer;
+    `
+  }
+
+  ${
+      props => props.buttonType==="outline" && css`
+      border-radius: 10px;
+        background-color: transparent;
+      border: 1px solid white;
+      color: white;
+        cursor: pointer;
     `
   }
 

@@ -1,25 +1,36 @@
 import {Routes,Route} from "react-router-dom"
-import {LandingPage} from "./routes";
 import {MainLayout} from "./layouts";
-
-const mainLayoutRoutes = [
-    {
-        path:"/",
-        component: <LandingPage/>
-    },
-    {
-        path:"/about",
-        component: <h1>About</h1>
-    }
-]
+import {
+    LandingPage,
+    Auth,
+    AdminDashboard,
+    List,
+    Single,
+    New
+} from "./routes";
 
 
 function App() {
   return (
       <>
         <Routes>
-          {mainLayoutRoutes.map(({path,component})=>
-              <Route path={path} element={<MainLayout>{component}</MainLayout>}/>)}
+          <Route path={"/"}>
+              <Route index element={<LandingPage/>}/>
+              <Route path={"auth"} element={<Auth/>}/>
+              <Route path={"dashboard"} element={<AdminDashboard/>}/>
+              <Route path={"users"}>
+                  <Route index element={<List/>}/>
+                  <Route path={":userId"} element={<Single/>}/>
+                  <Route path={"new"} element={<New/>}/>
+              </Route>
+
+              <Route path={"products"}>
+                  <Route index element={<List/>}/>
+                  <Route path={":productId"} element={<Single/>}/>
+                  <Route path={"new"} element={<New/>}/>
+              </Route>
+          </Route>
+
         </Routes>
       </>
 

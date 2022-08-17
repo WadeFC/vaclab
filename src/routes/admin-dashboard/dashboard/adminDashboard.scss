@@ -1,0 +1,9 @@
+.home{
+  display: flex;
+  .homeContainer{
+    background-color: white;
+    flex:6;
+/*    flex 2 means it should be twice the side of side in the container side bar has flex 1*/
+
+  }
+}

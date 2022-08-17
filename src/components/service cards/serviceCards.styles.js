@@ -8,9 +8,10 @@ export const Card = styled.div`
   width: 22em;
   max-width: 80%;
   padding: 2em 0;
-  background: white;
-  box-shadow: 0 0 6px 0 rgba(#202024, .12);
-  transition: all .35s ease;
+  border-radius: 14px;
+  background: #f9f9ff;
+  box-shadow:  5px 5px 11px #e8e8ed,
+    -5px -5px 11px #ffffff;
   
   @media screen and (max-width: 768px){
     margin-bottom: 2rem;
@@ -45,8 +46,8 @@ export const Card = styled.div`
 
   .logo {
     margin: 0 0 1em;
-    width: 5em;
-    height: 5em;
+    width: 7em;
+    height: 7em;
     transition: all .35s ease;
   }
 

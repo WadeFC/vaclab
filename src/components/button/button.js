@@ -2,9 +2,9 @@ import{
     Buttons
 } from "./button.styles";
 
-const Button =({children, type})=>{
+const Button =({children, buttonType,...otherProps})=>{
     return(
-        <Buttons type={type}>{children}</Buttons>
+        <Buttons buttonType={buttonType} {...otherProps}>{children}</Buttons>
     )
 }
 export {Button}

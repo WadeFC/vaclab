@@ -1,1 +1,7 @@
 export * from "./landingPage/landingPage"
+export * from "./authentication/auth"
+export * from "./admin-dashboard/dashboard/adminDashboard"
+export * from "./admin-dashboard/list/list"
+export * from "./admin-dashboard/new/new"
+export * from "./admin-dashboard/login/login"
+export * from "./admin-dashboard/single/single"

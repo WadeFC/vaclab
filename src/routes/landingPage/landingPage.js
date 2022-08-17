@@ -1,4 +1,4 @@
-import {Button} from "../../components";
+import {Button, Footer, Navbar} from "../../components";
 import {LandingCardSmall} from "./landingPage-card/small card/landingCard";
 import Nurse from "../../assets/images/nurse.png"
 import FadeOut from "../../assets/images/fadeout.png"
@@ -25,7 +25,7 @@ import Consultancy from "../../assets/svgs/consultancy.svg"
 const LandingPage =()=>{
     return(
         <>
-
+            <Navbar/>
             <Header>
                 <Heading className={"side-margin"}>
                     <p>Get protection today</p>
@@ -154,8 +154,7 @@ const LandingPage =()=>{
                     </Services>
                 </ServicesSection>
             </Section>
-
-
+            <Footer/>
         </>
     )
 }

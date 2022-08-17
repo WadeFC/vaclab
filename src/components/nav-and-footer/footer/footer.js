@@ -11,7 +11,7 @@ const Footer = ()=>{
                     <p>Protect yourself from the corona virus</p>
                     <h2>Get a vaccine now</h2>
                     <div className={"button_margin"}>
-                        <Button type={"dark"}>Get a slot now</Button>
+                        <Button buttonType={"dark"}>Get a slot now</Button>
                     </div>
                     <img className={"clip-circle"} src={Logo}/>
                 </BlueBox>

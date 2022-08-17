@@ -182,7 +182,7 @@ export const UserReview = styled.div`
     background-color: var(--text-color);
     clip-path: ellipse(258% 100% at -93.52% 100%);
     padding-top: 8rem;
-    
+    transition: all 0.3s;
     @media screen and (max-width:768px){
       height: 15rem;
       padding-top: 2.4rem;
