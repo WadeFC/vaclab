@@ -195,16 +195,18 @@ export const UserReview = styled.div`
 
 export const ServicesSection =styled.div`h4{
   color: var(--primary-light-blue);
+  
 }
 `
 
 export const Services = styled.div`
-  margin-top: 40px;
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-bottom: 70px;
+  margin-bottom: 500px;
+  
   @media screen and (max-width: 768px){
     flex-direction: column;
   }
