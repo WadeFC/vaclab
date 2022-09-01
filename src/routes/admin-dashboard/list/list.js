@@ -1,8 +1,18 @@
 import "./list.scss"
+import {DashboardNavbar, DashboardSidebar} from "../../../components";
+import {DashboardDatatable} from "../../../components/dashboard data table/dashaboardDatatable";
+
+
 export const List =()=>{
     return(
         <>
-            list
+            <div className={"list"}>
+                <DashboardSidebar/>
+                <div className={"listContainer"}>
+                    <DashboardNavbar/>
+                    <DashboardDatatable/>
+                </div>
+            </div>
         </>
     )
 }

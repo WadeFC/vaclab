@@ -25,6 +25,7 @@ import Consultancy from "../../assets/svgs/consultancy.svg"
 const LandingPage =()=>{
     return(
         <>
+
             <Navbar/>
             <Header>
                 <Heading className={"side-margin"}>

@@ -39,16 +39,16 @@ export const Auth =()=>{
                             <h2>Create Account</h2>
                             <form>
                                 <label>Name</label>
-                                <input type="text" name="user_name"/>
+                                <input type="text" name="user_name" className={"input"}/>
 
                                 <label>Email</label>
-                                <input type="email" name="user_email"/>
+                                <input type="email" name="user_email" className={"input"}/>
 
                                 <label>Password</label>
-                                <input type="password" name={"password"}/>
+                                <input type="password" name={"password"} className={"input"}/>
 
                                 <label>Confirm password</label>
-                                <input type="password" name={"confirmPassword"}/>
+                                <input type="password" name={"confirmPassword"} className={"input"}/>
 
                                 <Button buttonType={"dark"} type="submit" onClick={submit}>Sign Up</Button>
                             </form>
@@ -58,10 +58,10 @@ export const Auth =()=>{
                             <h2>Login</h2>
                             <form>
                                 <label>Email</label>
-                                <input type="email" name="user_email"/>
+                                <input type="email" name="user_email" className={"input"}/>
 
                                 <label>Password</label>
-                                <input type="password" name="user_password"/>
+                                <input type="password" name="user_password" className={"input"}/>
 
                                 <Button buttonType={"dark"} type="submit">Sign In</Button>
                             </form>

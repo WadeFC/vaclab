@@ -34,7 +34,8 @@ export default class Fade extends Component {
 
     render() {
         const settings = {
-            dots: true,
+            arrows:false,
+            dots: false,
             fade: true,
             infinite: true,
             speed: 500,

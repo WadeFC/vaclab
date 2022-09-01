@@ -20,54 +20,62 @@ export const DashboardSidebar =()=>{
                 <hr/>
                 <div className={"center"}>
                     <ul>
+                        <p className={"title"}>MAIN</p>
                         <li>
-                            <DashboardIcon/>
+                            <DashboardIcon className={"icon"}/>
                             <span>Dashboard</span>
                         </li>
+                        <p className={"title"}>LIST</p>
                         <li>
-                            <PersonIcon/>
+                            <PersonIcon className={"icon"}/>
                             <span>Users</span>
                         </li>
                         <li>
-                            <ShoppingCartIcon/>
+                            <ShoppingCartIcon className={"icon"}/>
                             <span>Products</span>
                         </li>
                         <li>
-                            <CreditCardTwoToneIcon/>
+                            <CreditCardTwoToneIcon className={"icon"}/>
                             <span>Orders</span>
                         </li>
                         <li>
-                            <LocalShippingTwoToneIcon/>
+                            <LocalShippingTwoToneIcon className={"icon"}/>
                             <span>Delivery</span>
                         </li>
+                        <p className={"title"}>ANALYTICS</p>
                         <li>
-                            <QueryStatsTwoToneIcon/>
+                            <QueryStatsTwoToneIcon className={"icon"}/>
                             <span>Stats</span>
                         </li>
                         <li>
-                            <NotificationsNoneTwoToneIcon/>
+                            <NotificationsNoneTwoToneIcon className={"icon"}/>
                             <span>Notifications</span>
                         </li>
+                        <p className={"title"}>SERVICES</p>
                         <li>
-                            <EngineeringTwoToneIcon/>
-                            <span>Doctors</span>
+                            <EngineeringTwoToneIcon className={"icon"}/>
+                            <span>System health</span>
                         </li>
                         <li>
-                            <SettingsTwoToneIcon/>
+                            <SettingsTwoToneIcon className={"icon"}/>
                             <span>Settings</span>
                         </li>
+                        <p className={"title"}>USER</p>
                         <li>
-                            <AccountCircleTwoToneIcon/>
+                            <AccountCircleTwoToneIcon className={"icon"}/>
                             <span>Profile</span>
                         </li>
                         <li>
-                            <LogoutTwoToneIcon/>
+                            <LogoutTwoToneIcon className={"icon"}/>
                             <span>Logout</span>
                         </li>
 
                     </ul>
                 </div>
-                <div className={"bottom"}>Color options</div>
+                <div className={"bottom"}>
+                    <div className={"colorOption"}></div>
+                    <div className={"colorOption"}></div>
+                </div>
             </div>
         </>
     )
